@@ -1,0 +1,12 @@
+{
+  "name": "boz",
+  "version": "1.0.0",
+  "description": "Boz is a leaderboard project built with vanilla JS.",
+  "main": "boz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
