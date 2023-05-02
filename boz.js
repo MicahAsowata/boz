@@ -66,10 +66,12 @@ switch (choice) {
     break;
   case "a":
     console.log("fetching all existing players");
+    for (let index = 0; index < game.players.length; index++) {
+      const element = game.players[index];
+      console.log(`${element.name} scored ${element.score} points`);
+    }
     break;
   default:
     console.log(`You are viewing the ${game.name} leaderboard. Do something`);
     break;
 }
-console.log(game);
-// console.log(choice);
