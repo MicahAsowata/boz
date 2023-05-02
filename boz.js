@@ -27,11 +27,16 @@ const choice = await select({
     },
   ],
 });
-game.users = [];
-
+game.players = [];
+const player = {};
 switch (choice) {
   case "n":
     console.log("Creating a new player");
+    player.name = await input({ message: "What is the player's name" });
+    player.score = parseInt(
+      await input({ message: `What did ${player.name} score` })
+    );
+    game.players.push(player);
     break;
   case "u":
     console.log("Updating a player score");
@@ -46,5 +51,5 @@ switch (choice) {
     console.log(`You are viewing the ${game.name} leaderboard. Do something`);
     break;
 }
-// console.log(game);
+console.log(game);
 // console.log(choice);
