@@ -44,6 +44,15 @@ switch (choice) {
     break;
   case "u":
     console.log("Updating a player score");
+    const playerId = parseInt(await input({ message: "Enter player id" }));
+    if (playerId <= game.players.length) {
+      game.players[playerId - 1].score = parseInt(
+        await input({ message: "Enter new score" })
+      );
+      console.log(game.players[playerId - 1]);
+    } else {
+      console.log("That player does not exist");
+    }
     break;
   case "d":
     console.log("removing a player");
