@@ -1,6 +1,7 @@
 {
   "name": "boz",
   "version": "1.0.0",
+  "type": "module",
   "description": "Boz is a leaderboard project built with vanilla JS.",
   "main": "boz.js",
   "scripts": {
