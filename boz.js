@@ -27,11 +27,15 @@ const choice = await select({
     },
   ],
 });
-game.players = [];
+game.players = [
+  { id: 1, name: "Micah", score: 17 },
+  { id: 2, name: "Peter", score: 18 },
+];
 const player = {};
 switch (choice) {
   case "n":
     console.log("Creating a new player");
+    player.id = game.players.length + 1;
     player.name = await input({ message: "What is the player's name" });
     player.score = parseInt(
       await input({ message: `What did ${player.name} score` })
