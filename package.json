@@ -5,12 +5,15 @@
   "description": "Boz is a leaderboard project built with vanilla JS.",
   "main": "boz.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format":"prettier --write *.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@inquirer/prompts": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }
